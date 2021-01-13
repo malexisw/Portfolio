@@ -77,13 +77,30 @@ export default {
     left: 0;
     right: 0;
 
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
 
     background: #2b2828;
 
+    overflow: auto;
+
     z-index: 99;
 }
+
+.work::-webkit-scrollbar {
+    width: .7em;
+    background: #0f0f0f;
+  }
+
+  .work::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .work::-webkit-scrollbar-thumb {
+    background-color:  #2b2828;
+    outline: 1px solid cyan;
+  }
 
 
 .back{
